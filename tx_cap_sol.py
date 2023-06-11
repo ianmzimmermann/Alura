@@ -1,6 +1,7 @@
 import requests
 import re
 
+
 url = "http://localhost/bruteforce3/index.php"
 cookies = {'PHPSESSID': '6i3lpc760hvs77d6vhhn3vq1tb'}
 data= {"username": "", "password": "", "captcha": ""}
