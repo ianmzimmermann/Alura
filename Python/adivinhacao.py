@@ -11,7 +11,7 @@ print("************************************\n")
 numero_secreto = 67
 tentativas = 3
 
-while (tentativas > 0):
+for i in range(1, tentativas + 1):
 
     tentativas -= 1
     chute = int(input("Digite o seu numero:"))
