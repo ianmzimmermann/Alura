@@ -11,7 +11,11 @@ print("*_Bem vindo ao jogo de Adivinhação_*\n")
 print("************************************\n")
 
 numero_secreto = random.randrange(1, 101)
-tentativas = 3
+
+print("Selecione o nível de dificuldade")
+print("3 Fácil \n2 Médio \n1 Difícil")
+
+tentativas = 3 * int(input("Digite o nível:"))
 
 print("Dica, o número está entre {} e {}".format(
     numero_secreto - random.randrange(1, 30), numero_secreto + random.randrange(1, 30)))
