@@ -26,12 +26,13 @@ for i in range(1, tentativas + 1):
     print("Você digitou", chute)
 
     if (numero_secreto == chute):
-        print("Você acertou")
+        print("\nVocê acertou\n")
+        break
     elif (numero_secreto < chute):
         print("Você errou, seu chute foi acima")
-        print("{} Tentativa(s) restante(s)\n".format(tentativas))
+        print("\n{} Tentativa(s) restante(s)\n".format(tentativas))
     else:
         print("Você errou, seu chute foi abaixo")
-        print("{} Tentativa(s) restante(s)\n".format(tentativas))
+        print("\n{} Tentativa(s) restante(s)\n".format(tentativas))
 
-print("\n\nFim de Jogo\n\n")
+print("\nFim de Jogo\n")
