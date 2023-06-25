@@ -1,3 +1,5 @@
+import random
+
 print("┏━━━┓\t┏━━━┓\t┏━━━┓\t┏━━━┓\t┏━━━┓")
 print("┃┏━┓┃\t┃┏━┓┃\t┃┏━┓┃\t┃┏━┓┃\t┃┏━┓┃")
 print("┗┛┏┛┃\t┗┛┏┛┃\t┗┛┏┛┃\t┗┛┏┛┃\t┗┛┏┛┃")
@@ -8,7 +10,7 @@ print("╋╋┗┛\t╋╋┗┛\t╋╋┗┛\t╋╋┗┛\t╋╋┗┛\n")
 print("*_Bem vindo ao jogo de Adivinhação_*\n")
 print("************************************\n")
 
-numero_secreto = 67
+numero_secreto = int(random.random() * 100)
 tentativas = 3
 
 print("Dica, o número está entre {} e {}".format(
