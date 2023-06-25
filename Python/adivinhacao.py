@@ -18,7 +18,7 @@ for i in range(1, tentativas + 1):
 
     if (tentativas == 1):
         print("Dica, o número está entre {} e {}".format(
-            numero_secreto-3, numero_secreto+3))
+            numero_secreto - 3, numero_secreto + 3))
 
     tentativas -= 1
 
@@ -30,9 +30,9 @@ for i in range(1, tentativas + 1):
         break
     elif (numero_secreto < chute):
         print("Você errou, seu chute foi acima")
-        print("\n{} Tentativa(s) restante(s)\n".format(tentativas))
+        print(f"\n{tentativas} Tentativa(s) restante(s)\n")
     else:
         print("Você errou, seu chute foi abaixo")
-        print("\n{} Tentativa(s) restante(s)\n".format(tentativas))
+        print(f"\n{tentativas} Tentativa(s) restante(s)\n")
 
 print("\nFim de Jogo\n")
