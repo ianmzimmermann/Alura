@@ -21,9 +21,9 @@ while (tentativas > 0):
         print("Você acertou")
     elif (numero_secreto < chute):
         print("Você errou, seu chute foi acima")
-        print(tentativas, "Tentativa(s) restante(s)", "\n")
+        print("{} Tentativa(s) restante(s)\n".format(tentativas))
     else:
         print("Você errou, seu chute foi abaixo")
-        print(tentativas, "Tentativa(s) restante(s)", "\n")\
+        print("{} Tentativa(s) restante(s)\n".format(tentativas))
 
 print("\n\nFim de Jogo\n\n")
