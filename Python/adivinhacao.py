@@ -11,9 +11,17 @@ print("************************************\n")
 numero_secreto = 67
 tentativas = 3
 
+print("Dica, o número está entre {} e {}".format(
+    numero_secreto - 15, numero_secreto + 15))
+
 for i in range(1, tentativas + 1):
 
+    if (tentativas == 1):
+        print("Dica, o número está entre {} e {}".format(
+            numero_secreto-3, numero_secreto+3))
+
     tentativas -= 1
+
     chute = int(input("Digite o seu numero:"))
     print("Você digitou", chute)
 
