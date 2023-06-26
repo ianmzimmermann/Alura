@@ -1,7 +1,7 @@
 import random
 
 
-def jogo_adivinhacao():
+def jogar():
 
     print("┏━━━┓\t┏━━━┓\t┏━━━┓\t┏━━━┓\t┏━━━┓")
     print("┃┏━┓┃\t┃┏━┓┃\t┃┏━┓┃\t┃┏━┓┃\t┃┏━┓┃")
