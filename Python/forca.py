@@ -3,11 +3,10 @@ def jogar():
     print("************************************\n")
 
     palavra_secreta = "python"
-    letras_acertadas = ["_", "_", "_", "_", "_", "_"]
-    index = 0
-    # for i in palavra_secreta:
-    #     letras_acertadas[index] = "_ "
-    #     index += 1
+    letras_acertadas = []
+
+    for i in palavra_secreta:
+        letras_acertadas.append("_")
 
     enforcou = False
     acertou = False
