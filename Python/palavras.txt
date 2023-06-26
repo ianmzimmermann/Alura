@@ -1,0 +1,5 @@
+python
+cobra
+teclado
+maça
+laranja
