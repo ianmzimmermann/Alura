@@ -20,10 +20,12 @@ class Conta:
         self.saque(valor)
         destino.deposito(valor)
 
-    def get_saldo(self):
+    @property
+    def saldo(self):
         return self.__saldo
 
-    def get_titular(self):
+    @property
+    def titular(self):
         return self.__titular
 
     @property
