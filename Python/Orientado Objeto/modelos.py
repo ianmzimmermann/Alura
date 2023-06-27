@@ -9,6 +9,10 @@ class Filme:
     def nome(self):
         return self.__nome
 
+    @nome.setter
+    def nome(self, novo_nome):
+        self.__nome = novo_nome.title()
+
     @property
     def likes(self):
         return self.__likes
@@ -27,6 +31,10 @@ class Serie:
     @property
     def nome(self):
         return self.__nome
+
+    @nome.setter
+    def nome(self, novo_nome):
+        self.__nome = novo_nome.title()
 
     @property
     def likes(self):
