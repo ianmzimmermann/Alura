@@ -17,7 +17,7 @@ def jogar():
     acertou = jogando(palavra_secreta, letras_acertadas,
                       enforcou, acertou, tentativas)
 
-    print_final(acertou)
+    print_final(acertou, palavra_secreta)
 
 
 def abertura():
@@ -69,15 +69,49 @@ def jogando(palavra_secreta, letras_acertadas, enforcou, acertou, tentativas):
     return acertou
 
 
-def print_final(acertou):
+def print_final(acertou, palavra_secreta):
     if (acertou):
-        print("Parabéns, você descobriu\n")
+        imprime_mensagem_vencedor()
     else:
-        print("Você perdeu, que tal tentar outra vez?\n")
+        mensagem_perdedor(palavra_secreta)
 
     print("Fim de Jogo")
 
 
-if (__name__ == "__main__"):
+def imprime_mensagem_vencedor():
+    print("Parabéns, você ganhou!")
+    print("       ___________      ")
+    print("      '._==_==_=_.'     ")
+    print("      .-\\:      /-.    ")
+    print("     | (|:.     |) |    ")
+    print("      '-|:.     |-'     ")
+    print("        \\::.    /      ")
+    print("         '::. .'        ")
+    print("           ) (          ")
+    print("         _.' '._        ")
+    print("        '-------'       ")
 
+
+def mensagem_perdedor(palavra_secreta):
+    print("Puxa, você foi enforcado!")
+    print("A palavra era {}".format(palavra_secreta))
+    print("    _______________         ")
+    print("   /               \       ")
+    print("  /                 \      ")
+    print("//                   \/\  ")
+    print("\|   XXXX     XXXX   | /   ")
+    print(" |   XXXX     XXXX   |/     ")
+    print(" |   XXX       XXX   |      ")
+    print(" |                   |      ")
+    print(" \__      XXX      __/     ")
+    print("   |\     XXX     /|       ")
+    print("   | |           | |        ")
+    print("   | I I I I I I I |        ")
+    print("   |  I I I I I I  |        ")
+    print("   \_             _/       ")
+    print("     \_         _/         ")
+    print("       \_______/           ")
+
+
+if (__name__ == "__main__"):
     jogar()
