@@ -15,6 +15,9 @@ class Caelum(Funcionario):
 
 
 class Alura(Funcionario):
+    def __init__(self, nome):
+        self.nome = nome
+
     def mostrar_tarefas(self):
         print('Fez muita coisa, Alurete!')
 
@@ -22,18 +25,25 @@ class Alura(Funcionario):
         print('Mostrando perguntas não respondidas do fórum')
 
 
+class Hipster:
+    def __str__(self):
+        return f'Hipster,  {self.nome}'
+
+
 class Junior(Alura):
     pass
 
 
-class Pleno(Alura, Caelum):
+class Pleno(Alura, Caelum, Hipster):
     pass
 
 
-jose = Junior()
+jose = Junior('José')
 jose.busca_perguntas_sem_resposta()
 
-ian = Pleno()
+ian = Pleno('Ian')
 ian.busca_perguntas_sem_resposta()
 ian.busca_cursos_do_mes()
 ian.mostrar_tarefas()
+
+print(ian)
