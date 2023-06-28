@@ -10,8 +10,13 @@ url_base = url[0:indice_base]
 url_parametros = url[indice_base + 1:len(url)]
 print(url_parametros)
 
-param_moeda_origem = 'moedaOrigem'
-indice_origem = url_parametros.find(param_moeda_origem)
-indice_moeda_origem = indice_origem + len(param_moeda_origem) + 1
+param_busca = 'moedaOrigem'
+indice_param = url_parametros.find(param_busca)
+indice_moeda = indice_param + len(param_busca) + 1
+indice_divisao = url_parametros.find('&', indice_moeda)
+if (indice_divisao == -1):
+    moeda_origem = url_parametros[indice_moeda:]
+else:
+    moeda_origem = url_parametros[indice_moeda:indice_divisao]
 
-moeda_origem = url_parametros[indice_moeda_origem:]
+print(moeda_origem)
