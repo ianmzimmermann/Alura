@@ -55,3 +55,17 @@ url = 'https://bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar&quantidad
 extrator_url = ExtratorURL(url)
 valor = extrator_url.get_valor_param("quantidade")
 print(valor)
+
+VALOR_DOLAR = 5.50
+moeda_origem = extrator_url.get_valor_param("moedaOrigem")
+moeda_destino = extrator_url.get_valor_param("moedaDestino")
+quantidade = extrator_url.get_valor_param("quantidade")
+
+if moeda_origem == "real" and moeda_destino == "dolar":
+    valor_conversao = int(quantidade) / VALOR_DOLAR
+    print(f"O valor de R$ {quantidade} reais é igual a $ {round(valor_conversao, 4)} dólares.")
+elif moeda_origem == "dolar" and moeda_destino == "real":
+    valor_conversao = int(quantidade) * VALOR_DOLAR
+    print(f"O valor de R$ {quantidade} dólares é igual a $ {round(valor_conversao, 4)} reais.")
+else:
+    print(f"Câmbio de {moeda_origem} para {moeda_destino} não está disponível.")
