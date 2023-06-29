@@ -46,7 +46,7 @@ class ExtratorURL:
         return valor
 
     def __len__(self):
-        return (self.url)
+        return len(self.url)
 
 
 # extrator_url = ExtratorURL("https://bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar&quantidade=100")
