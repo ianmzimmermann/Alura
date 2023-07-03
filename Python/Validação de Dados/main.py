@@ -1,7 +1,7 @@
-from cpf_cnpj import Cpf_Cnpj
+from cpf_cnpj import Documento
 
-# cpf = Cpf_Cnpj("15316264754", 'cpf')
-# print(cpf)
+cpf = Documento.cria_documento("15316264754")
+print(cpf)
 
-cnpj = Cpf_Cnpj("35379838000112", 'cnpj')
+cnpj = Documento.cria_documento("35379838000112")
 print(cnpj)
