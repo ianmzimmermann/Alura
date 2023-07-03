@@ -1,7 +1,4 @@
-from cpf import CPF
+from cpf import Cpf
 
-cpf = "15616987913"
-
-object_cpf = CPF(cpf)
-
-print(object_cpf)
+cpf_um = Cpf("15316264754")
+print(cpf_um)
