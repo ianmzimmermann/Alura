@@ -10,7 +10,7 @@ class telefones_br:
 
     def valida_telefone(self, telefone):
         padrao = "([0-9]{2,3})?([0-9]{2})([0-9]{4,5})([0-9]{4})"
-        resposta = re.search(padrao, telefone)
+        resposta = re.findall(padrao, telefone)
 
         if resposta:
             return True
