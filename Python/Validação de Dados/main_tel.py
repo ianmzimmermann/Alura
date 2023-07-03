@@ -1,8 +1,7 @@
-import re
+from telefones_br import telefones_br
 
-padrao_molde = "(xx)aaaa-wwww"
-padrao = "[0-9]{2}[0-9]{4,5}[0-9]{4}"
-texto = "eu gosto do numero 2126451234"
-resposta = re.search(padrao, texto)
+tel = "67981174321"
 
-print(resposta)
+tel_object = telefones_br(tel)
+
+print(tel_object)
