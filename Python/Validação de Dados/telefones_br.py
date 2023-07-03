@@ -9,7 +9,7 @@ class telefones_br:
             raise ValueError("Numero incorreto")
 
     def valida_telefone(self, telefone):
-        padrao = "[0-9]{2}[0-9]{4,5}[0-9]{4}"
+        padrao = "([0-9]{2,3})?([0-9]{2})([0-9]{4,5})([0-9]{4})"
         resposta = re.search(padrao, telefone)
 
         if resposta:
