@@ -1,4 +1,7 @@
-from cpf import Cpf
+from cpf import Cpf_Cnpj
 
-cpf_um = Cpf("15316264754")
-print(cpf_um)
+# cpf = Cpf_Cnpj("15316264754", 'cpf')
+# print(cpf)
+
+cnpj = Cpf_Cnpj("35379838000112", 'cnpj')
+print(cnpj)
