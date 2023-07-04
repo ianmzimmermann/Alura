@@ -12,7 +12,7 @@ class TestClass:
 
         assert resultado == esperado  # Then-desfecho
 
-    def test_quand0_sobrenome_recebe_Ian_Zimmermann_retornar_Zimmermann(self):
+    def test_quando_sobrenome_recebe_Ian_Zimmermann_retornar_Zimmermann(self):
         entrada = 'Ian Zimmermann'  # Given-Contexto
         esperado = 'Zimmermann'
 
@@ -22,7 +22,7 @@ class TestClass:
 
         assert resultado == esperado  # Then-desfecho
 
-    def test_quando_decrescimo_salario_recebe_100000_deve_retornar_90000(self):
+    def test_quando_decrescimo_salario_recebe_100000_retornar_90000(self):
         entrada_salario = 100000  # Given-Contexto
         entrada_nome = 'Paulo Bragança'
         esperado = 90000
@@ -31,5 +31,15 @@ class TestClass:
 
         funcionario_teste.decrescimo_salario()  # When-ação
         resultado = funcionario_teste.salario
+
+        assert resultado == esperado  # Then-desfecho
+
+    def test_quando_calcular_bonus_recebe_1000_retornar_100(self):
+        entrada_salario = 1000  # Given-Contexto
+        esperado = 100
+
+        funcionario_teste = Funcionario('Teste', '11/11/2000', entrada_salario)
+
+        resultado = funcionario_teste.calcular_bonus()  # When-ação
 
         assert resultado == esperado  # Then-desfecho
