@@ -23,7 +23,7 @@ class Funcionario:
 
     def sobrenome(self):
         nome_completo = self.nome.strip()
-        nome_split = nome_completo.split()
+        nome_split = nome_completo.split(' ')
         return nome_split[-1]
 
     def calcular_bonus(self):
