@@ -1,4 +1,4 @@
-from code.bytebank import Funcionario
+from codigo.bytebank import Funcionario
 
 
 class TestClass:
